@@ -1,0 +1,10 @@
+@import "tailwindcss";
+:root {
+  --root-margin: 20px;
+  --root-padding: 10px;
+}
+
+body {
+  margin: var(--root-margin);
+  padding: var(--root-padding);
+}
