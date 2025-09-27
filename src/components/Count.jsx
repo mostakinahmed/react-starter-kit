@@ -3,12 +3,10 @@ import React, { useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <div>
+    <div className="flex items-center justify-center">
       <div className="bg-white shadow-lg mt-5 rounded-lg p-6 w-64 text-center space-y-4">
         <h2 className="text-xl font-bold">Counter</h2>
-        <div className="text-4xl font-mono text-blue-600" x-text="count">
-          {count}
-        </div>
+        <div className="text-4xl font-mono text-blue-600">{count}</div>
 
         <div className="flex justify-center space-x-4">
           <button

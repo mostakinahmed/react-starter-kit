@@ -1,14 +1,15 @@
 import { React, useState } from "react";
+import Nav from "./components/Navber";
+import Form from "./components/Form.jsx";
+import Count from "./components/Count.jsx";
 
 function App() {
   return (
-    <div>
-      <div className="flex justify-center p-5  bg-gray-300">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-600">
-          Welcome to Our Application!
-        </h1>
-      </div>
-    </div>
+    <>
+      <Nav />
+      <Count />
+      <Form />
+    </>
   );
 }
 
