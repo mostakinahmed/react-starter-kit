@@ -1,5 +1,6 @@
 import React from "react";
 
+//dynamic card component
 const Card = ({ user: { name, phone, gender, image, address } }) => {
   return (
     <div className="flex justify-center bg-gray-100 p-4">
