@@ -6,7 +6,7 @@ const Card = ({ user: { name, phone, gender, image, address } }) => {
       <div className="bg-white shadow-lg rounded-lg w-80 p-6 space-y-4">
         <div className="flex justify-center">
           <img
-            src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg"
+            src={image}
             alt="Profile"
             className="w-32 h-32 rounded-full object-cover"
           />
@@ -21,9 +21,7 @@ const Card = ({ user: { name, phone, gender, image, address } }) => {
         </div>
 
         <div className="text-center">
-          <p className="text-gray-600">
-            Address: {address}
-          </p>
+          <p className="text-gray-600">Address: {address}</p>
         </div>
 
         <div className="text-center">
