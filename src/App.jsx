@@ -3,6 +3,8 @@ import Nav from "./components/Navber";
 import Form from "./components/Form.jsx";
 import Count from "./components/Count.jsx";
 import Card from "./components/Card.jsx";
+import Product from "./components/Product.jsx";
+import axios from "axios";
 
 //data set from api
 const data = [
@@ -49,6 +51,14 @@ const data = [
 ];
 
 function App() {
+  const [pData, setpData] = useState([]);
+  // fake api -test axios
+  const getData = async () => {
+    const res = await axios.get("https://fakestoreapi.com/products");
+    setpData(res.data);
+    console.log(pData);
+  };
+
   return (
     <>
       <Nav />
@@ -56,6 +66,18 @@ function App() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 p-4">
         {data.map((ele) => (
           <Card user={ele} />
+        ))}
+      </div>
+
+      <button
+        onClick={getData}
+        className="bg-blue-600 ml-8 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+      >
+        Get Data
+      </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 p-4">
+        {pData.map((element) => (
+          <Product pData={element} />
         ))}
       </div>
 
