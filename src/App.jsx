@@ -5,6 +5,7 @@ import Count from "./components/Count.jsx";
 import Card from "./components/Card.jsx";
 import Product from "./components/Product.jsx";
 import axios from "axios";
+import { useEffect } from "react";
 
 //data set from api
 const data = [
@@ -56,8 +57,11 @@ function App() {
   const getData = async () => {
     const res = await axios.get("https://fakestoreapi.com/products");
     setpData(res.data);
-  
   };
+
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <>
