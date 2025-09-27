@@ -29,7 +29,7 @@ const Card = ({ user: { name, phone, gender, image, address } }) => {
           <p className="text-gray-600">Gender: {gender}</p>
         </div>
       </div>
-    </div>
+    </div> //aa
   );
 };
 
