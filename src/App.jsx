@@ -56,7 +56,7 @@ function App() {
   const getData = async () => {
     const res = await axios.get("https://fakestoreapi.com/products");
     setpData(res.data);
-    console.log(pData);
+  
   };
 
   return (

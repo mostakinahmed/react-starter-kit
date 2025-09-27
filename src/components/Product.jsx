@@ -3,8 +3,6 @@ import React from "react";
 const product = ({
   pData: { title, description, rating, image, price, category },
 }) => {
-  console.log(rating);
-
   return (
     <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 m-4">
       <img
