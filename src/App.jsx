@@ -10,7 +10,7 @@ function App() {
     <div>
       <h1 className="font-bold px-10 py-4 text-6xl">{data}</h1>
       <button
-        className="bg-blue-500 mr-5 text-white py-2 px-6 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 active:bg-blue-700"
+        className="bg-blue-500 mr-5 ml-5 text-white py-2 px-6 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 active:bg-blue-700"
         onClick={() => {
           setData((data += 10));
         }}
